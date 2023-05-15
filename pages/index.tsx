@@ -5,10 +5,16 @@ import { useRouter } from 'next/router';
 import { MainLayout } from '@/components/layout';
 import { NextPageWithLayout } from '@/models';
 import { Box } from '@mui/material';
+import { HeroSection, RecenPost } from '@/components/home';
 
 const Home: NextPageWithLayout = () => {
   const router = useRouter();
-  return <Box>Home Page</Box>;
+  return (
+    <Box>
+      <HeroSection />
+      <RecenPost />
+    </Box>
+  );
 };
 Home.Layout = MainLayout;
 export default Home;
