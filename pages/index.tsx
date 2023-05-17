@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { MainLayout } from '@/components/layout';
 import { NextPageWithLayout } from '@/models';
 import { Box } from '@mui/material';
-import { HeroSection, RecenPost } from '@/components/home';
+import { FeatureWorks, HeroSection, RecenPost } from '@/components/home';
 
 const Home: NextPageWithLayout = () => {
   const router = useRouter();
@@ -13,6 +13,7 @@ const Home: NextPageWithLayout = () => {
     <Box>
       <HeroSection />
       <RecenPost />
+      <FeatureWorks />
     </Box>
   );
 };

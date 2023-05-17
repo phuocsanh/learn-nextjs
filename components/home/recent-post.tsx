@@ -5,9 +5,7 @@ import { PostCard } from './post-card';
 import * as React from 'react';
 import { IPost } from '@/models';
 
-export interface IRecenPostProps {}
-
-export function RecenPost(props: IRecenPostProps) {
+export function RecenPost() {
   const postList: IPost[] = [
     {
       id: '1',
@@ -50,7 +48,7 @@ export function RecenPost(props: IRecenPostProps) {
           }}
         >
           {postList?.map((post: IPost) => (
-            <Box mr={{ md: 2 }} mt={{ xs: 2, xd: 0 }}>
+            <Box mr={{ md: 2 }} mt={{ xs: 2, md: 0 }}>
               <PostCard post={post} />
             </Box>
           ))}

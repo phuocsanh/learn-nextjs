@@ -28,11 +28,10 @@ export const HeroSection = (props: IHeroSectionProps) => {
             </Button>
           </Box>
           <Box
-            flex={1}
             ml={2}
             mr={2}
-            width={{ xs: '50%' }}
-            height={{ xs: '50%' }}
+            width={{ xs: 200, md: 300 }}
+            height={{ xs: 200, md: 300 }}
             sx={{
               boxShadow: {
                 xs: '-2px 8px',
@@ -40,16 +39,20 @@ export const HeroSection = (props: IHeroSectionProps) => {
               },
               color: '#e7fbff',
               borderRadius: '50%',
+              dislay: 'inline-block',
+              overflow: 'hidden',
             }}
           >
-            <Image
-              alt="image"
-              src={minayoung}
-              style={{
-                borderRadius: '50%',
-                objectFit: 'cover',
-              }}
-            />
+            <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+              <Image
+                alt="Mountains"
+                src="https://images.unsplash.com/photo-1485199692108-c3b5069de6a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmVhdXRpZnVsbCUyMGdpcmx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                fill
+                style={{
+                  objectFit: 'cover',
+                }}
+              />
+            </div>
           </Box>
         </Stack>
       </Container>
